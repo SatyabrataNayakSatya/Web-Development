@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Fillup</title>
+</head>
+
+<body>
+    <h1>Form to Apply</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter your username</label>
+            <input type="text" name="username" id="username" placeholder="Enter Your Name" autofocus>
+        </div>
+
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="checkbox" id="cb">
+            <label for="cb">I accept that i am reading and filling the forms carefully and my all information are correct</label>
+        </div> <br>
+
+        <div>
+            <label for="satya">Enter Your Comment</label><br>
+            <textarea name="comment" id="satya" rows="4" cols="50">Enter Your text here...</textarea>
+        </div>
+
+        <div>
+            <label for="apple">select ur favorite fruit</label>
+            <select name="fruits" id="apple">
+                <option value="Apple">Apple</option>
+                <option value="Mango">Mango</option>
+                <option value="Mango">Banana</option>
+                <option value="Mango">Cherry</option>
+            </select>
+        </div>
+
+    </form>
+</body>
+
+</html>
+
+<!--
+1. post - post request hum server ko tabb bhejte hain jaab hume bahat saare data dena hota hai.
+
+2. get -  get request hum server ko taab bhejte hain jaab sirf server ko kucch baatna hai yaa sirf hit baas karna hai taab use karte hain.
+
+3. input- apke forms ke ander kya kya elements aayenge ex: date, name, dob, rollno, age, phone etc.
+
+4. id -   ek elementt ko uniquely identify karne ke liye use kiya jaata hai id ="username" hai toh kissi aur ko username nahii milsakta.
+
+5. div -  div tag ko use kiye warna Enter your username ke baad hi male aur female ka button aajata usse niche laane ke liye/aur space purpose ke liye use kiye.
+
+6. br tag- hum issko jyada prefer nahii karenge br se break hota hai aur niche element chala jata hai bass isiliye use kiye hain 
+
+Note:-> humne radio button mein dono jaga male ke liye aur female ke liye name="gender" yaa niki same name diye hai toh at a time ek hi select ho sakta hai
+
+1. action - the action attribute specifies the URL where the form data should be sent after the submission 
+    ex:  <form action="/submit.php" method="post"></form>
+
+2. method - the method attribute defines how the data is sent. The most common methods are GET and POST.
+    ex:  <form action="/submit.php" method="post"></form>
+
+3. name - the name attribute specifies the name for the element, making it easier to reference in scripts of the server-side code.
+name se hum mark karte hain toh server ko pata chaal jayega kii konsa key ke corresponding value hai. key value pair joh server ko jayega isske name ke hissab se jayega name aur value jayenge.
+
+4. placeholder - this attribute provides a hint to the user as to what can be entered in the field.
+
+5. required - mandatory to fill
+ex: <input type="text" required>
+
+6. autofocus - the autofocus attribute automatically focuses the cursor on the particular input when the page loads.
+ex: <input type="text" autofocus>
+
+7. pattern - the pattern attribute specifies a regular expression that the input must match to be valid .
+ex: <input type="text" pattern="[a-zA-z0-9]+">
+
+-->
