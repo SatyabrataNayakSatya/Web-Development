@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Audio and Media</title>
+</head>
+
+<body>
+    <video src="video.mp4.mp4" controls width="255" loop></video>
+
+    <audio src="song.mp3" controls autoplay></audio>
+
+    <!-- SVG - ek format hota hai jisse ki ap image ko create karsakte ho high graphics vector images. -->
+
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+
+    <!-- isse hum ek circle draw kiye svg ka use karke -->
+
+    <img src="img.svg" alt="a circle">
+
+    <!-- iFrames se ap ek dusri website ko embedd karsakte ho apke website mein -->
+
+    <iframe src="https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/?ref=shm" width="322" height="444" ></iframe>
+
+    <!-- meine youtube se embeddded code copy kiya hai -->
+
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/eKqY-oP1d_Y" title="How to Start Coding? Learn Programming for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+
+</body>
+
+</html>
+
+<!--
+1.  controls -Adds video controls like play, pause and volume
+
+2. autoplay - for automatically play
+
+3. loop - repeats the video by default
+
+4. muted - mutes the video by default
+
+5. poster - specifies and image to be displayed before the video starts playing.
+
+6. width and height specifies dimensions of the video
+
+Note:-> these 6 attributes are both for audio and video
+
+
+* ...IMPORTANT...
+preload(only for audio): pehle se agar ap chahte ho ki browser data ko fetch karle tab ap preload attribute ka use karenge.
+
+-> the preload attribute can have the following attributes:
+
+1. none - This is the default value. It indicates that the browser should not preload the audio file at all. The audio file will only start downloading when the user indicates playback.
+
+2. metadata - browser sirf metadata yaniki uss audio file ke baare mein joh information hai usse  preload karega matlab pehle se load karega.
+
+3. auto - browser preload karlega entire audio ko.
+-->
